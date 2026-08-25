@@ -19,7 +19,13 @@ function Parceiro({ p }) {
     >
       <span className={`parc-mark${temLogo ? ' com-logo' : ''}`}>
         {temLogo ? (
-          <img src={p.logo} alt={p.nome} onError={() => setSemLogo(true)} />
+          <img
+            src={p.logo}
+            alt={p.nome}
+            width={p.logoW}
+            height={p.logoH}
+            onError={() => setSemLogo(true)}
+          />
         ) : (
           <span aria-hidden="true">{p.inicial}</span>
         )}

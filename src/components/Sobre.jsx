@@ -8,7 +8,7 @@ export default function Sobre() {
       <div className="shell about-grid">
         <Reveal>
           <div className="about-photo">
-            <img src="./media/foto-2.jpg" alt="Lara Azevedo gravando conteúdo de beleza" loading="lazy" />
+            <img src="./media/foto-2.jpg" alt="Lara Azevedo gravando conteúdo de beleza" loading="lazy" width={704} height={1521} />
           </div>
         </Reveal>
 

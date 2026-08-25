@@ -106,7 +106,10 @@ export default function Hero() {
               src="./media/capa.jpg"
               alt="Lara Azevedo, criadora de conteúdo UGC"
               style={{ scale: scalePhoto }}
+              width={704}
+              height={1048}
               loading="eager"
+              fetchpriority="high"
             />
             <div className="photo-badge">
               <span>

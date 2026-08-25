@@ -3,10 +3,11 @@
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
-# Fotos e vídeos não têm hash no nome. Um dia de cache acelera bastante
-# sem travar a troca de mídia por muito tempo.
+# Fotos, vídeos e posters. Não têm hash no nome, mas raramente mudam —
+# 30 dias. Ao TROCAR uma mídia, use um nome de arquivo novo
+# (ex.: video-1b.mp4) para o navegador buscar a versão nova na hora.
 /media/*
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=2592000
 
 /favicon.svg
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=2592000

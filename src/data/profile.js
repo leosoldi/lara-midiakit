@@ -51,6 +51,7 @@ export const parceiros = [
     // salve o logo em public/media/ com este nome; se o arquivo nao existir,
     // o card mostra a letra de 'inicial' no lugar
     logo: './media/parceiro-follow-nutrition.png',
+    logoW: 1080, logoH: 350,
     inicial: 'F'
   },
   {
@@ -60,6 +61,7 @@ export const parceiros = [
     cta: 'Conhecer a marca',
     url: 'https://www.saintgermainbrand.com.br/',
     logo: './media/parceiro-saint-germain.png',
+    logoW: 1044, logoH: 333,
     inicial: 'S'
   }
 ]
@@ -118,15 +120,15 @@ export const servicos = [
 ]
 
 export const videos = [
-  { src: './media/video-1.mp4', titulo: 'Skincare em ação', tag: 'UGC · Skincare' },
-  { src: './media/video-2.mp4', titulo: 'Review de produto', tag: 'UGC · Review' },
-  { src: './media/video-3.mp4', titulo: 'Rotina de beleza', tag: 'UGC · Rotina' }
+  { src: './media/video-1.mp4', poster: './media/poster-1.jpg', titulo: 'Skincare em ação', tag: 'UGC · Skincare' },
+  { src: './media/video-2.mp4', poster: './media/poster-2.jpg', titulo: 'Review de produto', tag: 'UGC · Review' },
+  { src: './media/video-3.mp4', poster: './media/poster-3.jpg', titulo: 'Rotina de beleza', tag: 'UGC · Rotina' }
 ]
 
 export const fotos = [
-  { src: './media/foto-1.jpg', titulo: 'Aplicação de sérum' },
-  { src: './media/foto-2.jpg', titulo: 'Produto em uso' },
-  { src: './media/foto-3.jpg', titulo: 'Detalhe do produto' }
+  { src: './media/foto-1.jpg', w: 702, h: 1239, titulo: 'Aplicação de sérum' },
+  { src: './media/foto-2.jpg', w: 704, h: 1521, titulo: 'Produto em uso' },
+  { src: './media/foto-3.jpg', w: 704, h: 1521, titulo: 'Detalhe do produto' }
 ]
 
 export const diferenciais = [

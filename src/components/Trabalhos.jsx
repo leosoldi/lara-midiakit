@@ -48,13 +48,16 @@ function Reel({ v, index }) {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.7, delay: index * 0.08, ease }}
     >
+      {/* preload="none" e o que segura os 16MB: nada do video e baixado
+          ate o IntersectionObserver mandar tocar. O poster cobre a espera. */}
       <video
         ref={ref}
         src={v.src}
+        poster={v.poster}
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="none"
         controls={false}
         aria-label={v.titulo}
       />
@@ -83,7 +86,7 @@ function Foto({ f, index }) {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.7, delay: index * 0.08, ease }}
     >
-      <img src={f.src} alt={f.titulo} loading="lazy" />
+      <img src={f.src} alt={f.titulo} loading="lazy" width={f.w} height={f.h} />
       <div className="reel-veil" />
       <div className="reel-info">
         <small>Foto · UGC</small>
