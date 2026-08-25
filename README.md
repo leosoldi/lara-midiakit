@@ -2,6 +2,58 @@
 
 Site de mídia kit em **React + Vite**, mobile-first, com animações em `framer-motion`.
 
+## Como atualizar o site (o dia a dia)
+
+Três passos. Todos rodados na pasta `D:\lara.model`.
+
+### 1. Ver o que você está mudando
+
+```powershell
+npm run dev
+```
+
+Abre em http://localhost:5173 e recarrega sozinho a cada arquivo salvo.
+Deixe rodando enquanto edita. Para parar, `Ctrl + C`.
+
+Para abrir no celular, use o IP da máquina na mesma rede (ex.: `http://192.168.0.10:5173`).
+
+### 2. Editar
+
+Quase tudo — textos, números, links, serviços, dicas, parceiros — está em
+**`src/data/profile.js`**. Veja a tabela em "Onde editar", mais abaixo.
+
+Fotos e vídeos novos vão em **`public/media/`**, e o caminho é apontado no
+`profile.js` como `./media/nome-do-arquivo.jpg`.
+
+### 3. Publicar
+
+```powershell
+.\publicar.ps1 "o que mudou"
+```
+
+Isso envia para o GitHub. A Cloudflare percebe o push, roda o build e publica
+sozinha em 1 ou 2 minutos. **Você não precisa rodar `npm run build`** — quem faz
+isso é o servidor da Cloudflare.
+
+Acompanhe o andamento em: Cloudflare → Workers & Pages → lara-midiakit → Deployments.
+
+> Se o PowerShell reclamar que não pode executar scripts, rode uma vez:
+> `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`
+
+### Se algo der errado
+
+O site publicado **não muda** enquanto o build não termina com sucesso — um erro
+não derruba o que já está no ar. Se o build falhar, o log fica em Deployments,
+no painel da Cloudflare.
+
+Para desfazer a última alteração antes de publicar:
+
+```powershell
+git restore .
+```
+
+---
+
 ## Rodar
 
 ```bash
