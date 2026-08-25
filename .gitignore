@@ -1,0 +1,14 @@
+# dependências
+node_modules
+
+# build gerado (roda `npm run build` para recriar)
+dist
+
+# arquivos originais de mídia — as versões usadas no site já estão em
+# public/media/, então versionar esta pasta duplicaria ~20MB no histórico.
+# Mantenha um backup dela fora do git (Drive, HD externo).
+video lara/
+
+# sistema
+.DS_Store
+Thumbs.db
