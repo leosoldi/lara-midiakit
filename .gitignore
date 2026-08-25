@@ -9,6 +9,10 @@ dist
 # Mantenha um backup dela fora do git (Drive, HD externo).
 video lara/
 
+# estado local do wrangler / segredos do Cloudflare
+.wrangler
+.dev.vars
+
 # sistema
 .DS_Store
 Thumbs.db

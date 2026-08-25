@@ -1,0 +1,16 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+
+  // nome do Worker — vira o subdomínio lara-midiakit.<sua-conta>.workers.dev
+  "name": "lara-midiakit",
+  "compatibility_date": "2026-08-25",
+
+  "assets": {
+    // pasta gerada pelo `npm run build`
+    "directory": "./dist",
+
+    // o site tem uma página só e nenhum roteador. Com isso, qualquer URL
+    // digitada errada entrega o mídia kit em vez de um 404 do Cloudflare.
+    "not_found_handling": "single-page-application"
+  }
+}
