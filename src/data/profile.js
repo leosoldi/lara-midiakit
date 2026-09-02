@@ -25,7 +25,7 @@ export const audiencia = {
     {
       icone: 'insta',
       prefixo: '+',
-      valor: 14,
+      valor: 15,
       unidade: 'mil',
       label: 'Seguidores',
       desc: 'Audiência acompanhando meus conteúdos de beleza, maquiagem e skincare.'
