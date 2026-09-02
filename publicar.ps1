@@ -30,3 +30,10 @@ if (-not $?) { Write-Host "Falhou no 'git push'." -ForegroundColor Red; exit 1 }
 
 Write-Host ""
 Write-Host "Enviado. A Cloudflare vai publicar em instantes." -ForegroundColor Green
+
+#Exemple to send arquive single to github
+#git status
+#git add src/data/profile.js
+#git status
+#git commit -m "..."
+#git push
