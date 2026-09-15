@@ -11,8 +11,8 @@ export const profile = {
   email: 'laraazisa94@gmail.com',
 
   // Número com DDI + DDD (só números)
-  whatsapp: '554192378354',
-  whatsappVisivel: '(41) 9237-8354',
+  whatsapp: '5541992378354',
+  whatsappVisivel: '(41) 99237-8354',
 
   instagram: 'https://instagram.com/azevedo.model'
 }
@@ -25,7 +25,7 @@ export const audiencia = {
     {
       icone: 'insta',
       prefixo: '+',
-      valor: 15,
+      valor: 16,
       unidade: 'mil',
       label: 'Seguidores',
       desc: 'Audiência acompanhando meus conteúdos de beleza, maquiagem e skincare.'
@@ -33,7 +33,7 @@ export const audiencia = {
     {
       icone: 'play',
       prefixo: '+',
-      valor: 3,
+      valor: 4,
       unidade: 'milhões',
       label: 'Visualizações',
       desc: 'Somadas nos vídeos que já produzi.'
